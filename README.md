@@ -85,6 +85,7 @@ $ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam
 $ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam_rx78_control`/sample/csv/turn-left.csv
 ```
 
-##vf
+**Ejemplo de caminata hacia adelanta**
+
 
 
