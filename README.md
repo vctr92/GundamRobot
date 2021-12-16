@@ -28,25 +28,41 @@ Modelo 3d de la ciudad de Panama
 La carpeta **PanamaCity** de este repositorio contiene este modelo3d de la ciudad de Panama exportado en formato **.dae** para poder ser utilzado en gazebo.
 
 
-How to run gazebo simulation
-============================
+Iniciar simulacion GundamRobot
+==============================
 
-To run a gazebo dynamics simulation, you can start `gundam_rx78_world.launch`.
-
+**Preparar a Gundam Robot para caminar**
 ```
-$ roslaunch gundam_rx78_gazebo gundam_rx78_world.launch
-```
-
-If the gazebo simulation GUI is launched, You must start `start` button on the bottom of the gazebo UI to start dynamics calculation.
-
-To control joint angles, try a sample script.
-
-```
-$ rosrun gundam_rx78_control joint_position_client_example.py
+$ roslaunch gundam_rx78_gazebo gundam_rx78_walk.launch
 ```
 
-Note that currently, we have several limitation on this simulation, the robot is pinned to the world, we only have position controller etc.
+![image2](https://user-images.githubusercontent.com/61398373/146424713-ed34cf68-3669-4dd8-9ffd-f151c7c0e042.jpg)
+Posicion del Gundam Robot listo para caminar.
 
-You can also find sample motion control files in the `gundam_rx78_control/sample` directory.
+**Importar modelo 3d de la ciudad de Panama**
+
+
+
+**Comandos para darle movimento al GundamRobot**
+```
+# Caminar hacia adelante
+$ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam_rx78_control`/sample/csv/walk-forward.csv
+
+# Caminar hacia atras
+$ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam_rx78_control`/sample/csv/walk-backward.csv
+
+# Moverse a la derecha
+$ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam_rx78_control`/sample/csv/walk-to-right.csv
+
+# Moverse a la izquierd
+$ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam_rx78_control`/sample/csv/walk-to-left.csv
+
+# Girar a la derecha
+$ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam_rx78_control`/sample/csv/turn-right.csv
+
+# Girar a la izquierda
+$ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam_rx78_control`/sample/csv/turn-left.csv
+```
+
 
 
