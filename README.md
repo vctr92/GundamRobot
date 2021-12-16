@@ -62,8 +62,9 @@ Importar modelo 3d de la ciudad de Panama
 
 
 
-En una nueva terminal ejecutar cualquier comando para darle movimiento al Gundam Robot en la Ciudad de Panama
+En una nueva terminal ejecutar los siguientes comandos 
 ============================================================================================
+
 **Comandos para darle movimento al GundamRobot**
 ```
 # Caminar hacia adelante
