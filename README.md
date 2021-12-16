@@ -85,7 +85,15 @@ $ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam
 $ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam_rx78_control`/sample/csv/turn-left.csv
 ```
 
-**Ejemplo de caminata hacia adelanta**
+Ejemplo de caminata hacia adelante del Gundam Robot
+===================================================
 
+**Por cuestiones de rendimiento del equipo usado, se realiza sin el modelo3d de la Ciudad de Panama**
 
+![Screenshot from 2021-12-16 13-59-10](https://user-images.githubusercontent.com/61398373/146432318-e9664914-2906-4125-9d58-b6e6db6cd8ed.png)
 
+![Screenshot from 2021-12-16 13-59-19](https://user-images.githubusercontent.com/61398373/146432324-9fd6e63c-e725-4ec5-81bf-12a4ff6e709c.png)
+
+![Screenshot from 2021-12-16 13-59-24](https://user-images.githubusercontent.com/61398373/146432326-abadca5a-2126-46e4-9dc8-67989059ab9f.png)
+
+![Screenshot from 2021-12-16 13-59-38](https://user-images.githubusercontent.com/61398373/146432329-425779ff-ea31-45a1-83e2-430fc7986507.png)
