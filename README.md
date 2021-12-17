@@ -90,4 +90,5 @@ Ejemplo de caminata hacia adelante del Gundam Robot
 ===================================================
 
 **Por cuestiones de rendimiento del equipo usado, se realiza sin el modelo3d de la Ciudad de Panama**
+![gundam](https://user-images.githubusercontent.com/61398373/146469478-9bcd318d-1506-4a2d-aa1e-3896c8482d1a.gif)
 
